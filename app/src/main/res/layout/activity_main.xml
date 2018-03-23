@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#b7b4db">
+
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="@dimen/profile_pic_width"
+        android:layout_height="@dimen/profile_pic_height"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/dennis_ritchie" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="@dimen/profile_pic_width"
+        android:layout_height="@dimen/profile_pic_height"
+        android:layout_below="@+id/imageButton"
+        android:layout_marginTop="30dp"
+        android:scaleType="center"
+        android:src="@drawable/linus_torvads" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageButton2"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/james_gosling" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="30dp"
+        android:text="Famous persons"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:typeface="monospace"
+        android:shadowColor="@color/colorPrimary"
+        />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageButton"
+        android:layout_toEndOf="@+id/imageButton"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textViewBirthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewName"
+        android:layout_toEndOf="@+id/imageButton"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textViewBio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageButton2"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textViewBirthday"
+        android:layout_toEndOf="@id/imageButton"
+        android:ellipsize="end"
+        android:text="TextView"/>
+
+    <TextView
+        android:id="@+id/textViewName1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageButton2"
+        android:layout_toEndOf="@id/imageButton2"
+        android:text="TextView"/>
+
+    <TextView
+        android:id="@+id/textViewBirthday1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewName1"
+        android:layout_toEndOf="@id/imageButton2"
+        android:textAlignment="viewStart"
+        android:text="TextView"/>
+
+    <TextView
+        android:id="@+id/textViewName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageButton3"
+        android:layout_toEndOf="@id/imageButton3"
+        android:text="TextView"/>
+
+    <TextView
+        android:id="@+id/textViewBio1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageButton2"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textViewBirthday1"
+        android:layout_toEndOf="@id/imageButton2"
+        android:ellipsize="end"
+        android:text="TextView"/>
+
+    <TextView
+        android:id="@+id/textViewBirtdhay2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewName2"
+        android:layout_toEndOf="@id/imageButton3"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textViewBio2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageButton3"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textViewBirtdhay2"
+        android:layout_toEndOf="@id/imageButton3"
+        android:text="TextView" />
+</RelativeLayout>
