@@ -33,19 +33,25 @@
         android:layout_below="@+id/imageButton2"
         android:scaleType="centerCrop"
         android:layout_marginTop="30dp"
-        android:src="@drawable/james_gosling" />
+        android:src="@drawable/james_gosling"
+        android:adjustViewBounds="true"/>
+
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginBottom="30dp"
-        android:text="Famous persons"
-        android:textStyle="bold"
-        android:textAlignment="center"
-        android:typeface="monospace"
+        android:contentDescription="Title"
+        android:fontFamily="sans-serif"
         android:shadowColor="@color/colorPrimary"
-        />
+        android:text="Famous persons"
+        android:textAlignment="center"
+        android:textColor="#032236"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
 
     <TextView
         android:id="@+id/textViewName"
@@ -53,7 +59,9 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/imageButton"
         android:layout_toEndOf="@+id/imageButton"
-        android:text="TextView" />
+        android:contentDescription="PersonName"
+        android:text="TextView"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textViewBirthday"
@@ -61,7 +69,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textViewName"
         android:layout_toEndOf="@+id/imageButton"
+        android:contentDescription="PersonLifeTime"
         android:text="TextView" />
+
 
     <TextView
         android:id="@+id/textViewBio"
@@ -72,7 +82,8 @@
         android:layout_below="@+id/textViewBirthday"
         android:layout_toEndOf="@id/imageButton"
         android:ellipsize="end"
-        android:text="TextView"/>
+        android:text="TextView"
+        android:scrollbars="vertical"/>
 
     <TextView
         android:id="@+id/textViewName1"
@@ -80,7 +91,9 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/imageButton2"
         android:layout_toEndOf="@id/imageButton2"
-        android:text="TextView"/>
+        android:contentDescription="PersonName"
+        android:text="TextView"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textViewBirthday1"
@@ -88,8 +101,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textViewName1"
         android:layout_toEndOf="@id/imageButton2"
-        android:textAlignment="viewStart"
-        android:text="TextView"/>
+        android:contentDescription="PersonLifeTIme"
+        android:text="TextView"
+        android:textAlignment="viewStart" />
 
     <TextView
         android:id="@+id/textViewName2"
@@ -97,7 +111,9 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/imageButton3"
         android:layout_toEndOf="@id/imageButton3"
-        android:text="TextView"/>
+        android:contentDescription="PersonName"
+        android:text="TextView"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textViewBio1"
@@ -107,8 +123,10 @@
         android:layout_alignParentEnd="true"
         android:layout_below="@+id/textViewBirthday1"
         android:layout_toEndOf="@id/imageButton2"
+        android:contentDescription="PersonBIo"
         android:ellipsize="end"
-        android:text="TextView"/>
+        android:scrollbars="vertical"
+        android:text="TextView" />
 
     <TextView
         android:id="@+id/textViewBirtdhay2"
@@ -116,6 +134,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textViewName2"
         android:layout_toEndOf="@id/imageButton3"
+        android:contentDescription="PersonLifeTime"
         android:text="TextView" />
 
     <TextView
@@ -126,5 +145,7 @@
         android:layout_alignParentEnd="true"
         android:layout_below="@+id/textViewBirtdhay2"
         android:layout_toEndOf="@id/imageButton3"
+        android:contentDescription="PersonBIo"
+        android:scrollbars="vertical"
         android:text="TextView" />
 </RelativeLayout>

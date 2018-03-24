@@ -2,6 +2,7 @@ package com.example.android.domacazadaca1;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -30,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         final InspiringPerson person2=new InspiringPerson("Linus Torvalds",28,12,1960,0,0,0);
               person2.createLifeTime();
-              person2.setBio("finski znanstvenik, kreator je Linux kernela. Iako je studirao računarstvo," +
+              person2.setBio("Finski znanstvenik, kreator je Linux kernela. Iako je studirao računarstvo," +
                       " fakultet nikada nije završio Linus je, inspiriran Minix-om," +
                       " kojeg je napravio Andrew Tanenbaum, napravio operacijski sustav" +
                       " sličan Unixu, kojem je dao ime Linux. On je 1991. godine objavio prvu službenu " +
@@ -39,22 +40,25 @@ public class MainActivity extends AppCompatActivity {
 
        final InspiringPerson person3=new InspiringPerson("James Gosling",19,5,1955,0,0,0);
              person3.createLifeTime();
-             person3.setBio("On je kanadski računalni znanstvenik, najpoznatiji kao osnivač i voditeljica iza Java programskog jezika. " +
+             person3.setBio("Kanadski računalni znanstvenik, najpoznatiji kao osnivač i voditelj Java programskog jezika. " +
                      "Izradio je originalni dizajn Java i implementirao izvorni prevodilac i virtualni stroj jezika.");
              person3.setQuote("If I were to pick a language to use today other than Java, it would be Scala");
-       
+
         TextView prviName=(TextView)findViewById(R.id.textViewName);
         TextView prviBirthday=(TextView)findViewById(R.id.textViewBirthday);
         TextView prviBio=(TextView)findViewById(R.id.textViewBio);
+        prviBio.setMovementMethod(new ScrollingMovementMethod());
 
 
         TextView drugiName=(TextView)findViewById(R.id.textViewName1);
         TextView drugiBirthday=(TextView)findViewById(R.id.textViewBirthday1);
         TextView drugiBio=(TextView)findViewById(R.id.textViewBio1);
+        drugiBio.setMovementMethod(new ScrollingMovementMethod());
 
         TextView treciBio=(TextView)findViewById(R.id.textViewBio2);
         TextView treciName=(TextView)findViewById(R.id.textViewName2);
         TextView treciBirthday=(TextView)findViewById(R.id.textViewBirtdhay2);
+        treciBio.setMovementMethod(new ScrollingMovementMethod());
 
         ImageButton prva=(ImageButton)findViewById(R.id.imageButton);
         ImageButton druga=(ImageButton)findViewById(R.id.imageButton2);
