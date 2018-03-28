@@ -31,7 +31,6 @@
         android:layout_height="100dp"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/imageButton2"
-        android:scaleType="centerCrop"
         android:layout_marginTop="30dp"
         android:src="@drawable/james_gosling"
         android:adjustViewBounds="true"/>
@@ -45,7 +44,7 @@
         android:contentDescription="Title"
         android:fontFamily="sans-serif"
         android:shadowColor="@color/colorPrimary"
-        android:text="Famous persons"
+        android:text="@string/Title_textview"
         android:textAlignment="center"
         android:textColor="#032236"
         android:textSize="18sp"

@@ -29,9 +29,10 @@ public class InspiringPerson {
         this.dayDeath = dayDeath;
         this.monthDeath = monthDeath;
         this.yearDeath = yearDeath;
+        this.createLifeTime();
     }
 
-    public void createLifeTime()
+   private void createLifeTime()
     {
         if(this.dayBirth > 0 && this.monthBirth > 0 && this.yearBirth > 0 && this.dayDeath >0 && this.monthDeath > 0 && this.yearDeath >0)
         {
@@ -41,7 +42,7 @@ public class InspiringPerson {
         else if  (this.dayDeath ==0 && this.monthDeath==0 && this.yearDeath ==0)
         {
 
-           this.lifeTime=this.lifeTime=String.valueOf(this.dayBirth)+"."+String.valueOf(this.monthBirth)+"."+String.valueOf(this.yearBirth)+"-...";
+           this.lifeTime=String.valueOf(this.dayBirth)+"."+String.valueOf(this.monthBirth)+"."+String.valueOf(this.yearBirth)+"-...";
         }
     }
 
