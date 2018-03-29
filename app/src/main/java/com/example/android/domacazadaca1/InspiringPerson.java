@@ -12,37 +12,27 @@ import java.util.Date;
 public class InspiringPerson {
                      private String name;
                      private String lifeTime;
-                     private int dayBirth;
-                     private int monthBirth;
-                     private int yearBirth;
-                     private int dayDeath;
-                     private int monthDeath;
-                     private int yearDeath;
+                      private String dateBirth  ;
+                     private String dateDeath;
                      private String bio;
                      private String quote;
 
-    public InspiringPerson(String name, int dayBirth, int monthBirth, int yearBirth, int dayDeath, int monthDeath, int yearDeath) {
+    public InspiringPerson(String name, String dateBirth, String dateDeath) {
         this.name = name;
-        this.dayBirth = dayBirth;
-        this.monthBirth = monthBirth;
-        this.yearBirth = yearBirth;
-        this.dayDeath = dayDeath;
-        this.monthDeath = monthDeath;
-        this.yearDeath = yearDeath;
+        this.dateBirth = dateBirth;
+        this.dateDeath = dateDeath;
         this.createLifeTime();
     }
 
-   private void createLifeTime()
+    private void createLifeTime()
     {
-        if(this.dayBirth > 0 && this.monthBirth > 0 && this.yearBirth > 0 && this.dayDeath >0 && this.monthDeath > 0 && this.yearDeath >0)
+        if(dateDeath.equals("0"))
         {
-            this.lifeTime=String.valueOf(this.dayBirth)+"."+String.valueOf(this.monthBirth)+"."+String.valueOf(this.yearBirth)+"-"+String.valueOf(this.dayDeath)+"."+String.valueOf(this.monthDeath)+"."+String.valueOf(this.yearDeath);
-
+            this.lifeTime=this.dateBirth+"-...";
         }
-        else if  (this.dayDeath ==0 && this.monthDeath==0 && this.yearDeath ==0)
+        else
         {
-
-           this.lifeTime=String.valueOf(this.dayBirth)+"."+String.valueOf(this.monthBirth)+"."+String.valueOf(this.yearBirth)+"-...";
+            this.lifeTime=dateBirth+"-"+dateDeath;
         }
     }
 

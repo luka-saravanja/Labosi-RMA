@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        final InspiringPerson person1=new InspiringPerson("Dennis Ritchie",9,9,1941,12,10,2011);
+        final InspiringPerson person1=new InspiringPerson("Dennis Ritchie","9.9.1941","12.10.2011");
               person1.setBio("Bio je američki računalni znanstvenik poznat po svojem utjecaju na ALTRAN, B," +
                       " BCPL, C, Multics i Unix. Dobio je Turingovu nagradu 1983. i " +
                       "Nacionalnu medalju tehnologije 1998 21. travnja 1999. godine." +
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
                       " podrške tvrtke Lucent Technologies do umirovljenja 2007. godine.");
               person1.setQuote("UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity");
 
-        final InspiringPerson person2=new InspiringPerson("Linus Torvalds",28,12,1960,0,0,0);
+        final InspiringPerson person2=new InspiringPerson("Linus Torvalds","28.12.1960","0");
               person2.setBio("Finski znanstvenik, kreator je Linux kernela. Iako je studirao računarstvo," +
                       " fakultet nikada nije završio Linus je, inspiriran Minix-om," +
                       " kojeg je napravio Andrew Tanenbaum, napravio operacijski sustav" +
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
                       "verziju Linux kernela, 0.01. Danas je vrlo poznat i programira i dalje");
               person2.setQuote("Intelligence is the ability to avoid doing work, yet getting the work done");
 
-       final InspiringPerson person3=new InspiringPerson("James Gosling",19,5,1955,0,0,0);
+       final InspiringPerson person3=new InspiringPerson("James Gosling","19.5.1955","0");
              person3.setBio("Kanadski računalni znanstvenik, najpoznatiji kao osnivač i voditelj Java programskog jezika. " +
                      "Izradio je originalni dizajn Java i implementirao izvorni prevodilac i virtualni stroj jezika.");
              person3.setQuote("If I were to pick a language to use today other than Java, it would be Scala");
